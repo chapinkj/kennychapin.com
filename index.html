@@ -9,39 +9,41 @@
 </head>
 <style>
     
-    
     .small-img {
         object-fit: cover;
-        width: 100%;
+        width: 8rem;
         max-height: 8rem;
     }
-
+    .supporter-logos img{
+        max-width: 8rem;
+    }
+    
     a {
         text-decoration: none;
     }
-
+    
     li {
         list-style-type: none;
     }
-
+    
     .text-pop {
         color: #7FA5C2;
     }
-
+    
     .text-life {
         color: #85D49A;
     }
-
+    
     .text-data {
         color: #9489CA;
     }
-
+    
     .accordion-button {
         display:flex;
         flex-direction:row;
         align-content:center;
     }
-
+    
     .accordion-button::after,
     .accordion-button:not(.collapsed)::after  {
         background-image:none !important;
@@ -52,477 +54,517 @@
         color:white;
         line-height:1;
     }
-
+    
     .white-space-nowrap {
         white-space:nowrap;
     }
     .accordion-item {
         
     }
-    
+    .bg-dark {
+        background-color:rgb(33, 37, 41,0.95) !important;
+    }
 </style>
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top shadow">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top shadow p-0">
+        <div class="container-fluid shadow">
             <a class="navbar-brand fs-4 ms-3" href="#top">kennychapin.com</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link text-life" href="#life"><i class="fa-solid fa-dna"></i> <span class="d-none d-md-inline">Life Science</span></a>
-                    </li>
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link text-data" href="#data"><i class="fa-solid fa-chart-line"></i> <span class="d-none d-md-inline">Data Science</span></a>
-                    </li>
-                    <li class="nav-item ps-2 pe-2">
-                        <a class="nav-link text-pop" href="#pop"><i class="fa-solid fa-microscope"></i> <span class="d-none d-md-inline">Popular Science</span></a>
-                    </li>
+                    <li class="nav-item ps-2 pe-2"><a class="nav-link text-life" href="#life"><i class="fa-solid fa-dna"></i> <span class="d-none d-md-inline">Life Science</span></a></li>
+                    <li class="nav-item ps-2 pe-2"><a class="nav-link text-data" href="#data"><i class="fa-solid fa-chart-line"></i> <span class="d-none d-md-inline">Data Science</span></a></li>
+                    <li class="nav-item ps-2 pe-2"><a class="nav-link text-pop" href="#pop"><i class="fa-solid fa-microscope"></i> <span class="d-none d-md-inline">Popular Science</span></a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container col-xl-9 col-lg-9 col-md-9 col-sm-12 pb-5 pt-5 mt-5 mb-5" style="min-height:100vh;">
-        <div id="top" class="d-flex flex-column bg-dark text-light shadow p-5 mt-5">
-            <div class="d-flex flex-column">
-                <h1 class="display-4 text-center pt-4 mt-4"><a class="link-light" href="#top">Kenny Chapin, PhD</a></h1>
-                <div class="d-flex flex-row flex-wrap justify-content-center w-auto">
-                    <div class="p-2 p-lg-4"><a class="fs-4 text-life" href="#life"><i class="fa-solid fa-dna"></i> Life Science</a></div>
-                    <div class="p-2 p-lg-4"><a class="fs-4 text-data" href="#data"><i class="fa-solid fa-chart-line"></i> Data Science</a></div>
-                    <div class="p-2 p-lg-4"><a class="fs-4 text-pop" href="#pop"><i class="fa-solid fa-flask"></i> Popular Science</a></div>
+    
+    <div class="container">
+        <div class="row pb-5 pt-5 mt-5 mb-5" style="min-height:100vh;">
+            <div>
+                <div id="top" class="d-flex flex-column bg-dark text-light shadow p-5 mt-5">
+                    <div class="d-flex flex-column">
+                        <h1 class="display-4 text-center pt-4 mt-4"><a class="link-light" href="#top">Kenny Chapin, PhD</a></h1>
+                        <div class="d-flex flex-row flex-wrap justify-content-center w-auto">
+                            <div class="p-2 p-lg-4"><a class="fs-4 text-life" href="#life"><i class="fa-solid fa-dna"></i> Life Science</a></div>
+                            <div class="p-2 p-lg-4"><a class="fs-4 text-data" href="#data"><i class="fa-solid fa-chart-line"></i> Data Science</a></div>
+                            <div class="p-2 p-lg-4"><a class="fs-4 text-pop" href="#pop"><i class="fa-solid fa-flask"></i> Popular Science</a></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="accordion" id="life">
-            <div class="accordion-item  shadow">
-                <h2 class="accordion-header" >
-                    <div class="d-flex flex-row flex-wrap w-100 bg-dark rounded-0 p-3">
-                        <div class="d-flex flex-row flex-wrap justify-content-around fs-6 flex-grow-1">
-                            <a href="mailto:chapinkj@gmail.com" target="_blank" class="text-light m-2"><i class="fa-solid fa-envelope"></i> <span class="d-none d-md-inline">Email</span></a>
-                            <a href="https://github.com/chapinkj" target="_blank" class="text-light m-2"><i class="fa-brands fa-github"></i> <span class="d-none d-md-inline">GitHub</span></a>
-                            <a href="https://orcid.org/0000-0002-8382-4050" target="_blank" class="text-light m-2"><i class="fa-brands fa-orcid"></i> <span class="d-none d-md-inline">ORCID</span></a>
-                            <a href="https://scholar.google.com/citations?user=nl6d1xcAAAAJ&hl" target="_blank" class="text-light m-2"><i class="fa-brands fa-google"></i> <span class="d-none d-md-inline">Google Scholar</span></a>
-                        </div>
-                        <div class="d-flex flex-row flex-wrap justify-content-around fs-6 flex-grow-1">
-                            <a href="https://loop.frontiersin.org/people/383543" target="_blank" class="text-light m-2"><i class="fa-solid fa-stroopwafel"></i> <span class="d-none d-md-inline">Loop</span></a>
-                            <a href="https://www.researchgate.net/profile/Kenneth_Chapin" target="_blank" class="text-light m-2"><i class="fa-brands fa-researchgate"></i> <span class="d-none d-md-inline">ResearchGate</span></a>
-                            <a href="https://universityofarizona.academia.edu/KennethChapin" target="_blank" class="text-light m-2"><i class="fa-solid fa-graduation-cap"></i> <span class="d-none d-md-inline">Academia</span></a>
-                            <a href="https://www.linkedin.com/in/chapinkj/" target="_blank" class="text-light m-2"><i class="fa-brands fa-linkedin"></i> <span class="d-none d-md-inline">LinkedIn</span></a>
-                        </div>
-                    </div>
-                </h2>
-            </div>
-            
-            <div class="accordion-item shadow">
-                <h2 class="accordion-header shadow" id="headingLife">
-                    <button class="accordion-button bg-dark rounded-0 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLife" aria-expanded="true" aria-controls="collapseLife">
-                        <span class="text-life"><i class="fa-solid fa-dna"></i> Life Sciences</span>
-                    </button>
-                </h2>
-                <div id="collapseLife" class="accordion-collapse collapse show" aria-labelledby="headingLife" data-bs-parent="#life">
-                    <div class="accordion-body">
-                        <div class="d-flex flex-column p-3 text-center shadow">
-                            <span class="display-6">Evolutionary Biology &times; Behavioral Ecology</span>
-                            <div class="text-center m-3"><span class="fs-5 fw-bold">How does an organism's behavior shape its evolution?</span></div>
-                        
-                        <div class="d-flex flex-row flex-wrap text-start">
-                            <ul class="p-4 m-2 shadow flex-grow-1">
-                                <h3><i class="fa-solid fa-dna"></i> Organisms</h3>
-                                <li>Invasive and Endangered Species</li>
-                                <li>Ancient-lineage Arthropods</li>
-                                <li>Cave, Desert, and Forest Canopy Specialists</li>
-                                <li>Eusocial Colonies</li>
-                                <li>Microbes and Microbiomes</li>
-                                <li>Human Populations
-                                <li>Virtual and Theoretical Systems</li>
-                            </ul>
-                            <ul class="p-4 m-2 shadow flex-grow-1">
-                                <h3><i class="fa-solid fa-chart-column"></i> Analyses</h3>
-                                <li>Inferential Statistics</li>
-                                <li>Information Theory</li>
-                                <li>Machine Learning</li>
-                                <li>Simulation Modeling</li>
-                                <li>Genomics</li>
-                                <li>Bioinformatics</li>
-                                <li>Geographic Information Systems</li>
-                            </ul>
-                            <ul class="p-4 m-2 shadow flex-grow-1">
-                                <h3><i class="fa-solid fa-microscope"></i> Tools</h3>
-                                <li>Molecular Genomics</li>
-                                <li>High Throughput Sequencing</li>
-                                <li>Fluorometry</li>
-                                <li>Behavioral Assays</li>
-                                <li>Python, R, Postgres, NetLogo</li>
-                                <li>Fullstack Web Development</li>
-                                <li>High Performance Cluster Computing</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="container mt-5 shadow">
-                        <div class="d-flex flex-column p-3 text-center">
-                            <span class="display-6">Scientific Publications</span>
-                        </div>
-                        <div class="d-flex flex-row align-items-center justify-content-between w-100">
-                            <p>Google Scholar: <a href="https://scholar.google.com/citations?user=nl6d1xcAAAAJ" target="_blank">nl6d1xcAAAAJ</a></p>
-                            <p>ORCID: <a href="https://orcid.org/0000-0002-8382-4050" target="_blank">0000-0002-8382-4050</a></p>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <div class="d-flex flex-row mb-4 mt-2">
-                                <img src="img/behavioral-ecology-front-page.png" alt="Publication Image" class="img-fluid w-100">
-                                <img src="img/aas-cover.jpg" alt="Publication Image" class="img-fluid p-1 w-100">
-                                <img src="img/islandbiogeography.png" alt="Publication Image" class="img-fluid p-1 w-100">
-                                <img src="img/arac-44-1-cov.jpg" alt="Publication Image" class="img-fluid p-1 w-100">
-                                <img src="img/evaluatinganopen.png" alt="Publication Image" class="img-fluid p-1 w-100">
+                <div class="accordion" id="life">
+                    
+                    <div class="accordion-item  shadow">
+                        <h2 class="accordion-header" >
+                            <div class="d-flex flex-row flex-wrap w-100 bg-dark rounded-0 p-3">
+                                <div class="d-flex flex-row flex-wrap justify-content-around fs-6 flex-grow-1">
+                                    <a href="mailto:chapinkj@gmail.com" target="_blank" class="text-light m-2"><i class="fa-solid fa-envelope"></i> <span class="d-none d-md-inline">Email</span></a>
+                                    <a href="https://github.com/chapinkj" target="_blank" class="text-light m-2"><i class="fa-brands fa-github"></i> <span class="d-none d-md-inline">GitHub</span></a>
+                                    <a href="https://orcid.org/0000-0002-8382-4050" target="_blank" class="text-light m-2"><i class="fa-brands fa-orcid"></i> <span class="d-none d-md-inline">ORCID</span></a>
+                                    <a href="https://scholar.google.com/citations?user=nl6d1xcAAAAJ&hl" target="_blank" class="text-light m-2"><i class="fa-brands fa-google"></i> <span class="d-none d-md-inline">Google Scholar</span></a>
+                                </div>
+                                <div class="d-flex flex-row flex-wrap justify-content-around fs-6 flex-grow-1">
+                                    <a href="https://loop.frontiersin.org/people/383543" target="_blank" class="text-light m-2"><i class="fa-solid fa-stroopwafel"></i> <span class="d-none d-md-inline">Loop</span></a>
+                                    <a href="https://www.researchgate.net/profile/Kenneth_Chapin" target="_blank" class="text-light m-2"><i class="fa-brands fa-researchgate"></i> <span class="d-none d-md-inline">ResearchGate</span></a>
+                                    <a href="https://universityofarizona.academia.edu/KennethChapin" target="_blank" class="text-light m-2"><i class="fa-solid fa-graduation-cap"></i> <span class="d-none d-md-inline">Academia</span></a>
+                                    <a href="https://www.linkedin.com/in/chapinkj/" target="_blank" class="text-light m-2"><i class="fa-brands fa-linkedin"></i> <span class="d-none d-md-inline">LinkedIn</span></a>
+                                </div>
                             </div>
-                            
-                            <table class="table table-striped">
-                                <tbody>
-                                    <tr>
-                                        <td>Chapin KJ, Kittle A, Dornhaus A. 2022. Social pseudoscorpion nest architecture provides direct benefits to group members and rivals the efficiency of honey bees. Journal of Arachnology 50:323-334</td>
-                                        <td><a href="pdf/Chapin Kittle Dornhaus 2022.pdf" target="_blank">pdf</a> <a href="https://doi.org/10.1636/JoA-S-21-017" target="_blank">doi</a></td>
+                        </h2>
+                    </div>
+                    
+                    <div id="life" class="accordion-item shadow">
+                        <h2 class="accordion-header shadow" id="headingLife"><button class="accordion-button bg-dark rounded-0 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLife" aria-expanded="true" aria-controls="collapseLife"><span class="text-life"><i class="fa-solid fa-dna"></i> Life Science</span></button></h2>
+                        <div id="collapseLife" class="accordion-collapse collapse show" aria-labelledby="headingLife" data-bs-parent="#life">
+                            <div class="accordion-body">
+                                <section class="container mt-5 mb-5">
+                                    <div class="text-center pt-5 pb-5">
+                                        <h3 class="display-4">Evolutionary Biology &times; Behavioral Ecology</h3>
+                                        <span class="fs-5 fw-bold">How does an organism's behavior shape its evolution?</span>
+                                    </div>
+                                    <div class="d-flex flex-row flex-wrap">
+                                        <ul class="p-4 m-2 shadow flex-grow-1">
+                                            <h4><i class="fa-solid fa-dna"></i> Organisms</h4>
+                                            <li>Invasive and Endangered Species</li>
+                                            <li>Ancient-lineage Arthropods</li>
+                                            <li>Cave, Desert, and Forest Canopy Specialists</li>
+                                            <li>Eusocial Colonies</li>
+                                            <li>Microbes and Microbiomes</li>
+                                            <li>Human Populations</li>
+                                            <li>Virtual and Theoretical Systems</li>
+                                        </ul>
+                                        <ul class="p-4 m-2 shadow flex-grow-1">
+                                            <h4><i class="fa-solid fa-chart-column"></i> Analyses</h4>
+                                            <li>Inferential Statistics</li>
+                                            <li>Information Theory</li>
+                                            <li>Machine Learning</li>
+                                            <li>Simulation Modeling</li>
+                                            <li>Genomics</li>
+                                            <li>Bioinformatics</li>
+                                            <li>Geographic Information Systems</li>
+                                        </ul>
+                                        <ul class="p-4 m-2 shadow flex-grow-1">
+                                            <h4><i class="fa-solid fa-microscope"></i> Tools</h4>
+                                            <li>Molecular Genomics</li>
+                                            <li>High Throughput Sequencing</li>
+                                            <li>Fluorometry</li>
+                                            <li>Behavioral Assays</li>
+                                            <li>Python, R, Postgres, NetLogo</li>
+                                            <li>Fullstack Web Development</li>
+                                            <li>High Performance Cluster Computing</li>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <section class="container mt-5 mb-5">
+                                    <div class="text-center pt-5 pb-5">
+                                        <h3 class="display-4">Scientific Publications</h3>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center justify-content-around">
+                                        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=nl6d1xcAAAAJ" target="_blank">nl6d1xcAAAAJ</a></p>
+                                        <p>ORCID: <a href="https://orcid.org/0000-0002-8382-4050" target="_blank">0000-0002-8382-4050</a></p>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="d-flex flex-row mb-4 mt-2">
+                                            <img src="img/behavioral-ecology-front-page.png" alt="Publication Image" class="img-fluid shadow m-2 w-100">
+                                            <img src="img/aas-cover.jpg" alt="Publication Image" class="img-fluid shadow m-2 w-100">
+                                            <img src="img/islandbiogeography.png" alt="Publication Image" class="img-fluid shadow m-2 w-100">
+                                            <img src="img/arac-44-1-cov.jpg" alt="Publication Image" class="img-fluid shadow m-2 w-100">
+                                            <img src="img/evaluatinganopen.png" alt="Publication Image" class="img-fluid shadow m-2 w-100">
+                                        </div>
                                         
-                                    </tr>
-                                    <tr>
-                                        <td>Wynne JJ, Niemiller ML, Chapin KJ. 2022. Evolutionary dynamics of cave and surface organisms. In: Cave Biodiversity: Speciation and Diversity of Subterranean Fauna. John Hopkins Press. </td>
-                                        <td><a href="https://www.press.jhu.edu/books/title/12872/cave-biodiversity">site</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Paat V, Dornhaus A. 2022. Brood as booty: the effect of colony size and resource value in social insect contests. Behavioral Ecology 33:549-555.</td>
-                                        <td><a href="pdf/Chapin Paat Dornhaus 2022.pdf">pdf</a> <a href="https://doi.org/10.1093/beheco/arac019">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Jones MR, Winkler DE, Rink G, Massatti R. 2022. Evolutionary dynamics inform management interventions of a hanging garden obligate, Carex specuicola. Frontiers in Conservation Science: Conservation Genomics 3: </td>
-                                        <td><a href="pdf/Chapin Jones 2022.pdf">pdf</a> <a href="https://doi.org/10.3389/fcosc.2022.941002">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Briffa M, Lane SM, Chapin KJ, Peixoto PEC. 2020. Using ternary plots to investigate continuous variation in animal contest strategies. Animal Behaviour 167:85-99 </td>
-                                        <td><a href="pdf/Briffa et al. 2020.pdf">pdf</a> <a href="https://doi.org/10.1016/j.anbehav.2020.06.006">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Winkler DE, Chapin KJ, Garmon JD, Gaut BS, Huxman TE. 2020. Sahara mustard as a major threat to desert biodiversity in the southwest United States and the need to integrate contemporary methods to understand its biology. Evolution and Ecology 10:14453 </td>
-                                        <td><a href="pdf/Winkler Chapin 2020.pdf">pdf</a> <a href=" https://doi.org/10.1002/ece3.6936">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kattge J, Bönisch G, Díaz S, Lavorel S,…Chapin KJ, et al. 2019. TRY plant trait database - enhanced coverage and open access. Global Change Biology 26:119-188 </td>
-                                        <td><a href="pdf/gcb.pdf">pdf</a> <a href="https://doi.org/10.1111/gcb.14904">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ Peixoto PE, Briffa M.2019. The point of the triangle and utility of repeated measures: a response to comments on Chapin et al. Behavioral Ecology 30:1191-1192 </td>
-                                        <td><a href="pdf/Chapin2019.pdf">pdf</a> <a href="https://doi.org/10.1093/beheco/arz163">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ. 2019. Guano deposition predicts top predator (Amblypygi: Phrynidae) abundance in subtropical caves. Journal of Arachnology 47:385-388</td>
-                                        <td><a href="pdf/Chapin_2019.pdf">pdf</a> <a href="https://doi.org/10.1636/0161-8202-47.3.385">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Peixoto PEC, Briffa M. 2019. Further mismeasures of animal contests: a new framework for assessment strategies. Behavioral Ecology 30:1177-1185</td>
-                                        <td><a href="pdf/Chapin et al. 2019.pdf">pdf</a> <a href="https://doi.org/10.1093/beheco/arz081">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Winkler DE, Lin MY, Delgadillo J, Chapin KJ, Huxman TE. 2019. Early life history responses and phenotypic shifts in a rare endemic plant responding to climate change. Conservation Physiology 7:coz076 </td>
-                                        <td><a href="pdf/Winkler_etal_ 2019b.pdf">pdf</a> <a href="http://doi.org/10.1093/conphys/coz076">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Winkler DE, Chapin KJ, François O, Garmon JD, Gaut BS, Huxman TE. 2019. Multiple introductions and population structure during the rapid expansion of the invasive Sahara mustard (Brassica tournefortii). Ecology &amp; Evolution doi: 10.1002/ece3.5239 </td>
-                                        <td><a href="pdf/Winkler_etal_2019.pdf">pdf</a> <a href="https://doi.org/10.1002/ece3.5239">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Smith KH. 2019. Vertically stratified arthropod diversity in Florida upland hardwood forests. Florida Entomologist 102:1 </td>
-                                        <td><a href="https://doi.org/10.1653/024.102.0134">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Winkler DE, Wiencek P, Agnarsson I. 2018. Island biogeography and ecological modeling of the amblypygid Phrynus marginemaculatus in the Florida Keys archipelago. Ecology &amp; Evolution 8:9139-9151</td>
-                                        <td><a href="pdf/Chapin_etal_2018.pdf">pdf</a> <a href="https://doi.org/10.1002/ece3.4333">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Chen E. 2018. Reproductive strategy of a cave-living arachnid with indeterminate growth (Phrynus longipes). Journal of Arachnology 46:380-383</td>
-                                        <td><a href="pdf/Chapin_Chen_2018.pdf">pdf</a> <a href="https://doi.org/10.1636/JoA-17-062.1">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>McArthur IW, Miranda G, Seiter M, Chapin KJ. 2018. Global patterns of sexual dimorphism of Amblypygi. Zoologischer Anzeiger 273:56-64. </td>
-                                        <td><a href="https://doi.org/10.1016/j.jcz.2018.02.005">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Winkler DE, Gremer JR, Chapin KJ, Kao M, Huxman TE. 2018. Rapid alignment of functional trait variation with locality across the invaded range of Sahara mustard (Brassica tournefortii). American Journal of Botany 105:1188-1197 </td>
-                                        <td><a href="pdf/Winkler_etal_2018.pdf">pdf</a> <a href="https://doi.org/10.1002/ajb2.1126">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ. 2017. Arthropod Life History. In Encyclopedia of Animal Cognition and Behavior. SpringerNature doi:10.1007/978-3-319-47829-6_820-1 </td>
-                                        <td><a href="pdf/Chapin_2017.pdf">pdf</a> <a href="https://doi.org/10.1007/978-3-319-47829-6_820-1">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Reed-Guy S. 2017. Territoriality mediates atypical size-symmetric cannibalism in the Amblypygi Phrynus longipes. Ethology 123:772-777 </td>
-                                        <td><a href="pdf/Chapin_Reed-Guy_2017.pdf">pdf</a> <a href="https://doi.org/10.1111/eth.12647">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Nonacs PN, Hayes L. 2017. Evaluating an open-exam approach to engaging students in evolutionary paradoxes: Cheating to Learn. American Biology Teacher 79:140-144</td>
-                                        <td><a href="pdf/Chapin_Nonacs_Hayes_2017.pdf">pdf</a> <a href="https://doi.org/10.1525/abt.2017.79.2.144">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Winkler DE, Chapin KJ, Kueppers LM. 2016. Soil moisture mediates alpine life form and community productivity responses to warming. Ecology 97:1553-1563 </td>
-                                        <td><a href="pdf/Winkler_Chapin_Kueppers_2016.pdf">pdf</a> <a href="https://doi.org/10.1890/15-1197.1">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Hill-Lindsay S. 2016. Territoriality evidenced by asymmetric intruder-holder motivation in an amblypygid. Behavioural Processes 122:110-115 </td>
-                                        <td><a href="pdf/Chapin_Hill-Lindasy_2016.pdf">pdf</a> <a href="https://doi.org/10.1016/j.beproc.2015.11.014">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Hebets EA. 2016. Invited Review: The behavioral ecology of amblypygids. Journal of Arachnology 44:1-14 </td>
-                                        <td><a href="pdf/Chapin_Hebets 2016.pdf">pdf</a> <a href="https://doi.org/10.1636/V15-62.1">doi</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ. 2015. Cave-epigean behavioral variation of the whip spider Phrynus longipes (Arachnida: Amblypygi) evidenced by activity, vigilance, and aggression. Journal of Arachnology. 43:214-219 </td>
-                                        <td><a href="pdf/Chapin_2015.pdf">pdf</a> <a href="https://doi.org/10.1636/J15-04">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ. 2014. Microhabitat and spatial complexity predict group size of the whip spider Heterophrynus batesii in Amazonian Ecuador. Journal of Tropical Ecology 30:173-177 </td>
-                                        <td><a href="pdf/Chapin_2014.pdf">pdf</a> <a href="http://www.kennychapin.com/pdf/Chapin%202014.pdf">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ. 2011. A subcuticular permanent marking technique (Visual Implant Elastomer) for Scorpions. Journal of Arachnology 39:194-6 </td>
-                                        <td><a href="pdf/Chapin_2011.pdf">pdf</a> <a href="https://doi.org/10.1017/S0266467413000850">doi</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chapin KJ, Meylan PA. 2011. Turtle populations at a heavily used recreational site: Ichetucknee Springs State Park, Columbia and Suwannee Counties, Florida. Herpetological Conservation &amp; Biology 6:51-60</td>
-                                        <td><a href="pdf/Chapin_Meylan_2011.pdf">pdf</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            
-                            <div class="d-flex flex-column p-3 text-center mt-5 w-100">
-                                <span class="display-6">Research Suporters</span>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap justify-content-around">
-                                <a style="max-width:10rem;" class="m-2" href="https://nsf.gov/" target="_blank"><img src="img/nsf.png" class="img-fluid" alt="NSF"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://darpa.gov/" target="_blank"><img src="img/darpa.png" class="img-fluid" alt="DARPA"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://kennychapin.com/ucla.edu" target="_blank"><img src="img/latin-american-institute.jpg" class="img-fluid" alt="Latin American Institute"></a>
-                                <a style="max-width:10rem;" class="m-2" href="http://ucla.edu/" target="_blank"><img src="img/ucla.png" class="img-fluid" alt="UCLA"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://dmns.org/" target="_blank"><img src="img/dmns.jpg" class="img-fluid" alt="Denver Museum of Nature and Science"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://kennychapin.com/amnh.org" target="_blank"><img src="img/amnh.jpg" class="img-fluid" alt="American Museum of Natural History"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://kennychapin.com/wp-content/uploads/2021/06/job_57447.jpeg" target="_blank"><img src="img/aps.jpeg" class="img-fluid" alt="APS"></a>
-                                <a style="max-width:10rem;" class="m-2" href="http://tubbcanyondesertconservancy.org/" target="_blank"><img src="img/tubb-canyon.jpg" class="img-fluid" alt="Tubb Canyon Desert Conservancy"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://uarizona.edu/" target="_blank"><img src="img/ua.png" class="img-fluid" alt="University of Arizona"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://wtamu.edu/" target="_blank"><img src="img/wtamu.jpg" class="img-fluid" alt="WTAMU"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://www.animalbehaviorsociety.org/" target="_blank"><img src="img/animal-behavior-society.png" class="img-fluid" alt="Animal Behavior Society"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://explorers.org/" target="_blank"><img src="img/explorers-club.png" class="img-fluid" alt="Explorers Club"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://eeb.ucla.edu/" target="_blank"><img src="img/ucla-eeb.png" class="img-fluid" alt="UCLA EEB"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://americanarachnology.org/" target="_blank"><img src="img/aas.png" class="img-fluid" alt="American Arachnology Society"></a>
-                                <a style="max-width:10rem;" class="m-2" href="https://ucdavis.edu/" target="_blank"><img src="img/ucd.png" class="img-fluid p-2" alt="UC Davis"></a>
+                                        <table class="table table-striped shadow">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Chapin KJ, Kittle A, Dornhaus A. 2022. Social pseudoscorpion nest architecture provides direct benefits to group members and rivals the efficiency of honey bees. Journal of Arachnology 50:323-334</td>
+                                                    <td><a href="pdf/Chapin Kittle Dornhaus 2022.pdf" target="_blank">pdf</a> <a href="https://doi.org/10.1636/JoA-S-21-017" target="_blank">doi</a></td>   
+                                                </tr>
+                                                <tr>
+                                                    <td>Wynne JJ, Niemiller ML, Chapin KJ. 2022. Evolutionary dynamics of cave and surface organisms. In: Cave Biodiversity: Speciation and Diversity of Subterranean Fauna. John Hopkins Press. </td>
+                                                    <td><a href="https://www.press.jhu.edu/books/title/12872/cave-biodiversity">site</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Paat V, Dornhaus A. 2022. Brood as booty: the effect of colony size and resource value in social insect contests. Behavioral Ecology 33:549-555.</td>
+                                                    <td><a href="pdf/Chapin Paat Dornhaus 2022.pdf">pdf</a> <a href="https://doi.org/10.1093/beheco/arac019">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Jones MR, Winkler DE, Rink G, Massatti R. 2022. Evolutionary dynamics inform management interventions of a hanging garden obligate, Carex specuicola. Frontiers in Conservation Science: Conservation Genomics 3: </td>
+                                                    <td><a href="pdf/Chapin Jones 2022.pdf">pdf</a> <a href="https://doi.org/10.3389/fcosc.2022.941002">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Briffa M, Lane SM, Chapin KJ, Peixoto PEC. 2020. Using ternary plots to investigate continuous variation in animal contest strategies. Animal Behaviour 167:85-99 </td>
+                                                    <td><a href="pdf/Briffa et al. 2020.pdf">pdf</a> <a href="https://doi.org/10.1016/j.anbehav.2020.06.006">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Winkler DE, Chapin KJ, Garmon JD, Gaut BS, Huxman TE. 2020. Sahara mustard as a major threat to desert biodiversity in the southwest United States and the need to integrate contemporary methods to understand its biology. Evolution and Ecology 10:14453 </td>
+                                                    <td><a href="pdf/Winkler Chapin 2020.pdf">pdf</a> <a href=" https://doi.org/10.1002/ece3.6936">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kattge J, Bönisch G, Díaz S, Lavorel S,…Chapin KJ, et al. 2019. TRY plant trait database - enhanced coverage and open access. Global Change Biology 26:119-188 </td>
+                                                    <td><a href="pdf/gcb.pdf">pdf</a> <a href="https://doi.org/10.1111/gcb.14904">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ Peixoto PE, Briffa M.2019. The point of the triangle and utility of repeated measures: a response to comments on Chapin et al. Behavioral Ecology 30:1191-1192 </td>
+                                                    <td><a href="pdf/Chapin2019.pdf">pdf</a> <a href="https://doi.org/10.1093/beheco/arz163">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ. 2019. Guano deposition predicts top predator (Amblypygi: Phrynidae) abundance in subtropical caves. Journal of Arachnology 47:385-388</td>
+                                                    <td><a href="pdf/Chapin_2019.pdf">pdf</a> <a href="https://doi.org/10.1636/0161-8202-47.3.385">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Peixoto PEC, Briffa M. 2019. Further mismeasures of animal contests: a new framework for assessment strategies. Behavioral Ecology 30:1177-1185</td>
+                                                    <td><a href="pdf/Chapin et al. 2019.pdf">pdf</a> <a href="https://doi.org/10.1093/beheco/arz081">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Winkler DE, Lin MY, Delgadillo J, Chapin KJ, Huxman TE. 2019. Early life history responses and phenotypic shifts in a rare endemic plant responding to climate change. Conservation Physiology 7:coz076 </td>
+                                                    <td><a href="pdf/Winkler_etal_ 2019b.pdf">pdf</a> <a href="http://doi.org/10.1093/conphys/coz076">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Winkler DE, Chapin KJ, François O, Garmon JD, Gaut BS, Huxman TE. 2019. Multiple introductions and population structure during the rapid expansion of the invasive Sahara mustard (Brassica tournefortii). Ecology &amp; Evolution doi: 10.1002/ece3.5239 </td>
+                                                    <td><a href="pdf/Winkler_etal_2019.pdf">pdf</a> <a href="https://doi.org/10.1002/ece3.5239">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Smith KH. 2019. Vertically stratified arthropod diversity in Florida upland hardwood forests. Florida Entomologist 102:1 </td>
+                                                    <td><a href="https://doi.org/10.1653/024.102.0134">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Winkler DE, Wiencek P, Agnarsson I. 2018. Island biogeography and ecological modeling of the amblypygid Phrynus marginemaculatus in the Florida Keys archipelago. Ecology &amp; Evolution 8:9139-9151</td>
+                                                    <td><a href="pdf/Chapin_etal_2018.pdf">pdf</a> <a href="https://doi.org/10.1002/ece3.4333">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Chen E. 2018. Reproductive strategy of a cave-living arachnid with indeterminate growth (Phrynus longipes). Journal of Arachnology 46:380-383</td>
+                                                    <td><a href="pdf/Chapin_Chen_2018.pdf">pdf</a> <a href="https://doi.org/10.1636/JoA-17-062.1">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>McArthur IW, Miranda G, Seiter M, Chapin KJ. 2018. Global patterns of sexual dimorphism of Amblypygi. Zoologischer Anzeiger 273:56-64. </td>
+                                                    <td><a href="https://doi.org/10.1016/j.jcz.2018.02.005">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Winkler DE, Gremer JR, Chapin KJ, Kao M, Huxman TE. 2018. Rapid alignment of functional trait variation with locality across the invaded range of Sahara mustard (Brassica tournefortii). American Journal of Botany 105:1188-1197 </td>
+                                                    <td><a href="pdf/Winkler_etal_2018.pdf">pdf</a> <a href="https://doi.org/10.1002/ajb2.1126">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ. 2017. Arthropod Life History. In Encyclopedia of Animal Cognition and Behavior. SpringerNature doi:10.1007/978-3-319-47829-6_820-1 </td>
+                                                    <td><a href="pdf/Chapin_2017.pdf">pdf</a> <a href="https://doi.org/10.1007/978-3-319-47829-6_820-1">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Reed-Guy S. 2017. Territoriality mediates atypical size-symmetric cannibalism in the Amblypygi Phrynus longipes. Ethology 123:772-777 </td>
+                                                    <td><a href="pdf/Chapin_Reed-Guy_2017.pdf">pdf</a> <a href="https://doi.org/10.1111/eth.12647">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Nonacs PN, Hayes L. 2017. Evaluating an open-exam approach to engaging students in evolutionary paradoxes: Cheating to Learn. American Biology Teacher 79:140-144</td>
+                                                    <td><a href="pdf/Chapin_Nonacs_Hayes_2017.pdf">pdf</a> <a href="https://doi.org/10.1525/abt.2017.79.2.144">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Winkler DE, Chapin KJ, Kueppers LM. 2016. Soil moisture mediates alpine life form and community productivity responses to warming. Ecology 97:1553-1563 </td>
+                                                    <td><a href="pdf/Winkler_Chapin_Kueppers_2016.pdf">pdf</a> <a href="https://doi.org/10.1890/15-1197.1">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Hill-Lindsay S. 2016. Territoriality evidenced by asymmetric intruder-holder motivation in an amblypygid. Behavioural Processes 122:110-115 </td>
+                                                    <td><a href="pdf/Chapin_Hill-Lindasy_2016.pdf">pdf</a> <a href="https://doi.org/10.1016/j.beproc.2015.11.014">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Hebets EA. 2016. Invited Review: The behavioral ecology of amblypygids. Journal of Arachnology 44:1-14 </td>
+                                                    <td><a href="pdf/Chapin_Hebets 2016.pdf">pdf</a> <a href="https://doi.org/10.1636/V15-62.1">doi</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ. 2015. Cave-epigean behavioral variation of the whip spider Phrynus longipes (Arachnida: Amblypygi) evidenced by activity, vigilance, and aggression. Journal of Arachnology. 43:214-219 </td>
+                                                    <td><a href="pdf/Chapin_2015.pdf">pdf</a> <a href="https://doi.org/10.1636/J15-04">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ. 2014. Microhabitat and spatial complexity predict group size of the whip spider Heterophrynus batesii in Amazonian Ecuador. Journal of Tropical Ecology 30:173-177 </td>
+                                                    <td><a href="pdf/Chapin_2014.pdf">pdf</a> <a href="http://www.kennychapin.com/pdf/Chapin%202014.pdf">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ. 2011. A subcuticular permanent marking technique (Visual Implant Elastomer) for Scorpions. Journal of Arachnology 39:194-6 </td>
+                                                    <td><a href="pdf/Chapin_2011.pdf">pdf</a> <a href="https://doi.org/10.1017/S0266467413000850">doi</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chapin KJ, Meylan PA. 2011. Turtle populations at a heavily used recreational site: Ichetucknee Springs State Park, Columbia and Suwannee Counties, Florida. Herpetological Conservation &amp; Biology 6:51-60</td>
+                                                    <td><a href="pdf/Chapin_Meylan_2011.pdf">pdf</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                                <section class="container mb-5 mt-5">
+                                    <div class="d-flex flex-column p-3 text-center p-5">
+                                        <h3 class="display-4">Suporters</h3>
+                                    </div>
+                                    <div id="supporter-logos" class="d-flex flex-row flex-wrap justify-content-around shadow p-4">
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://nsf.gov/" target="_blank"><img src="img/nsf.png" class="img-fluid" alt="NSF"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://darpa.gov/" target="_blank"><img src="img/darpa.png" class="img-fluid" alt="DARPA"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://kennychapin.com/ucla.edu" target="_blank"><img src="img/latin-american-institute.jpg" class="img-fluid" alt="Latin American Institute"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="http://ucla.edu/" target="_blank"><img src="img/ucla.png" class="img-fluid" alt="UCLA"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://dmns.org/" target="_blank"><img src="img/dmns.jpg" class="img-fluid" alt="Denver Museum of Nature and Science"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://kennychapin.com/amnh.org" target="_blank"><img src="img/amnh.jpg" class="img-fluid" alt="American Museum of Natural History"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://kennychapin.com/wp-content/uploads/2021/06/job_57447.jpeg" target="_blank"><img src="img/aps.jpeg" class="img-fluid" alt="APS"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="http://tubbcanyondesertconservancy.org/" target="_blank"><img src="img/tubb-canyon.jpg" class="img-fluid" alt="Tubb Canyon Desert Conservancy"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://uarizona.edu/" target="_blank"><img src="img/ua.png" class="img-fluid" alt="University of Arizona"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://wtamu.edu/" target="_blank"><img src="img/wtamu.jpg" class="img-fluid" alt="WTAMU"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://www.animalbehaviorsociety.org/" target="_blank"><img src="img/animal-behavior-society.png" class="img-fluid" alt="Animal Behavior Society"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://explorers.org/" target="_blank"><img src="img/explorers-club.png" class="img-fluid" alt="Explorers Club"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://eeb.ucla.edu/" target="_blank"><img src="img/ucla-eeb.png" class="img-fluid" alt="UCLA EEB"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://americanarachnology.org/" target="_blank"><img src="img/aas.png" class="img-fluid" alt="American Arachnology Society"></a>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-2">
+                                            <a class="m-2" href="https://ucdavis.edu/" target="_blank"><img src="img/ucd.png" class="img-fluid p-2" alt="UC Davis"></a>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div id="pop" class="accordion-item shadow">
-                <h2 class="accordion-header bg-dark text-light rounded-0" id="headingPop">
-                    <button class="accordion-button bg-dark rounded-0 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePop" aria-expanded="true" aria-controls="collapsePop">
-                        <span class="text-pop"><i class="fa-solid fa-microscope"></i>&nbsp; Popular Science</span>
-                    </button>
-                </h2>
-                <div id="collapsePop" class="accordion-collapse collapse show show" aria-labelledby="headingPop" data-bs-parent="#pop">
-                    <div class="accordion-body">
-                        <div class="d-flex flex-column p-3 text-center mt-5 w-100">
-                            <span class="display-6">About Kenny</span>
-                        </div>
-                        <div class="d-flex flex-row flex-wrap p-2">
-                            <div class="col-lg-6 col-md-12">
-                                <p class="p-2">Dr. Kenny Chapin is an evolutionary biologist and science communicator with a lifelong passion to inspire others about the natural world. He holds degrees in biology, including a PhD in biology from UCLA. Dr. Chapin has authored dozens of scientific and educational publications in academic journals and books like <i>Animal Behaviour</i>, <i>Behavioral Ecology</i>, and <i>American Biology Teacher</i>; presented at invited lectures and conferences around the globe; and served as a visiting scientist and lecturer at UCLA, UC Davis, and the University of Arizona. His work has been featured in science news outlets like BBC, National Geographic, The Science Times, Earth Touch News, SciShow, Bad Science, and Science Moab.</p>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="d-flex flex-row flex-wrap pt-2">
-                                    <img src="img/kenneth-chapin.webp" class="img-fluid p-1 w-25 small-img" alt="Kenneth Chapin">
-                                    <img src="img/kenny-chapin1.jpg" class="img-fluid p-1 w-25 small-img" alt="Kenneth Chapin">
-                                    <img src="img/chapin.jpg" class="img-fluid p-1 w-25 small-img" alt="Kenneth Chapin">
-                                    <img src="img/ken-chapin.JPG" class="img-fluid p-1 w-25 small-img" alt="Kenneth Chapin">
-                                    <img src="img/kenneth-chapin3.jpg" class="img-fluid p-1 w-25 small-img" alt="Kenneth Chapin">
-                                    <img src="img/kenneth-j-chapin.jpg" class="img-fluid p-1 w-25 small-img" alt="Kenneth Chapin">
-                                    <img src="img/kenny-chapin2.webp" class="img-fluid p-1 w-25 small-img" alt="Kenneth Chapin">
-                                    <img src="img/kenny-chapin-3.jpg" class="img-fluid p-1 w-25 small-img" alt="Kenneth Chapin">
-                                </div>
-                            </div>
-                        </div>
-                        <p>Represented by <a href="https://www.headwaterliterary.com/" target="_blank">Headwater Literary</a></p>
+                    
+                    <div id="pop" class="accordion-item shadow">
                         
-                        <div class="d-flex flex-column p-3 text-center mt-5 w-100">
-                            <span class="display-6">Press and Media</span>
-                        </div>
-                        <div class="d-flex flex-row flex-wrap gap-5 justify-content-center">
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3">
-                                <img src="img/sci-show.png" class="img-fluid" alt="SciShow">
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3>6 Animals with extraordinary adaptations to cave life</h3>
-                                    <p>
-                                        Living in a cave isn’t easy, but these six cave-dwelling animals have gained some amazing traits to help them survive there! 
-                                        <a href="https://www.youtube.com/watch?v=sI1pvZZ3Mec" target="_blank">Watch @ Scishow</a>
-                                    </p>
+                        
+                        <h2 class="accordion-header bg-dark text-light rounded-0" id="headingPop">
+                            <button class="accordion-button bg-dark rounded-0 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePop" aria-expanded="true" aria-controls="collapsePop">
+                                <h2 class="text-pop"><i class="fa-solid fa-microscope"></i>&nbsp; Popular Science</h2>
+                            </button>
+                        </h2>
+                        <div id="collapsePop" class="accordion-collapse collapse show show" aria-labelledby="headingPop" data-bs-parent="#pop">
+                            <div class="accordion-body">
+                                
+                                <div class="container-fluid mt-5 mb-5 text-center">
+                                    <h3 class="display-4">About Kenny</h3>
+                                    <div class="d-flex flex-row">
+                                        <div class="col-12 col-md-6 shadow p-4">
+                                            <p>Dr. Kenny Chapin is an evolutionary biologist and science communicator with a lifelong passion to inspire others about the natural world. He holds degrees in biology, including a PhD in biology from UCLA.</p>
+                                            <p>Dr. Chapin has authored dozens of scientific and educational publications in academic journals and books like <i>Animal Behaviour</i>, <i>Behavioral Ecology</i>, and <i>American Biology Teacher</i>; presented at invited lectures and conferences around the globe; and served as a visiting scientist and lecturer at UCLA, UC Davis, and the University of Arizona.</p>
+                                            <p> His work has been featured in science news outlets like BBC, National Geographic, The Science Times, Earth Touch News, SciShow, Bad Science, and Science Moab.</p>
+                                            <p>Represented by <a href="https://www.headwaterliterary.com/" target="_blank">Headwater Literary</a></p>                                        
+                                        </div>
+                                        <div class="col-12 col-md-6 shadow p-4 m-2">
+                                            <div class="d-flex flex-row flex-wrap">
+                                                <img src="img/kenneth-chapin.webp" class="img-fluid m-2 small-img" alt="Kenneth Chapin">
+                                                <img src="img/kenny-chapin1.jpg" class="img-fluid m-2 small-img" alt="Kenneth Chapin">
+                                                <img src="img/chapin.jpg" class="img-fluid m-2 small-img" alt="Kenneth Chapin">
+                                                <img src="img/ken-chapin.JPG" class="img-fluid m-2 small-img" alt="Kenneth Chapin">
+                                                <img src="img/kenneth-chapin3.jpg" class="img-fluid m-2 small-img" alt="Kenneth Chapin">
+                                                <img src="img/kenneth-j-chapin.jpg" class="img-fluid m-2 small-img" alt="Kenneth Chapin">
+                                                <img src="img/kenny-chapin2.webp" class="img-fluid m-2 small-img" alt="Kenneth Chapin">
+                                                <img src="img/kenny-chapin-3.jpg" class="img-fluid m-2 small-img" alt="Kenneth Chapin">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3">
-                                <img src="img/bbc-news.png" class="img-fluid" alt="BBC News">
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3 class="ps-2 pe-2 text-end">The spider so terrifying that it has its own publicist</h3>
-                                    <p class="ps-2 pe-2 flex-shrink-0">
-                                        He has spent years studying these violent and terrifying-looking animals, and assures that they are truly “delicate and shy” beings.
-                                        <a href="https://www.bbc.com/mundo/noticias/2016/04/160411_ciencia_arana_aterradora_con_relacionista_publico_ap" target="_blank">Read @ BBC News</a>
-                                    </p>
+                            <div class="container mt-5 mb-5">
+                                <div class="d-flex flex-column p-3 text-center mt-5 mb-5">
+                                    <h3 class="display-4">Press and Media</h3>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3">
-                                <img src="img/national-geographic.webp" class="img-fluid" alt="National Geographic">
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3>Watch Cannibal ‘Scorpions’ Fight</h3>
-                                    <p>With long, spiky legs and formidable fangs, tailless whip scorpions look a
-                                        lot scarier than they are…
-                                        <a href="https://www.nationalgeographic.com/animals/article/whip-scorpions-arachnids-cannibalism" target="_blank">Read @ National Geographic</a>
-                                    </p>
-                                </div>
-                            </div>                            
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3">
-                                <img src="img/the-scientist.jpg" class="img-fluid" alt="The Scientist">
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3>Meet the arachnid that may add a new chapter to the book on sensory biology</h3>
-                                    <p>
-                                        Whip spiders, also known as tailless whip scorpions, are actually neither spiders nor scorpions.
-                                        <a href="https://www.the-scientist.com/notebook/meet-the-arachnid-that-may-add-a-new-chapter-to-the-book-on-sensory-biology-30173" target="_blank">Read @ The Scientist</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3">
-                                <img src="img/earth-touch.jpeg" class="img-fluid" alt="Earth Touch News">
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3>Cannibal Battle: Whip Scorpion Turf Wars can be Deadly</h3>
-                                    <p>
-                                        Tailless whip scorpions are fiercely territorial - and willing to fight for their turf. Scientists recently set out to learn more about the behaviour.
-                                        <a href="https://www.earthtouchnews.com/natural-world/predator-vs-prey/cannibal-battles-whip-scorpion-turf-wars-can-be-deadlysciencetimes.com/articles/31445/20210530/great-whip-spider-boom-what-is-it.htm" target="_blank">Read @ Earth Touch News</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3">
-                                <img src="img/science-times.webp" class="img-fluid" alt="Science Times">
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3>Great Whip Spider Boom: Are These Exotic Arachnids a Spider or Tailless Scorpions?</h3>
-                                    <p>
-                                        The current surge of behavioral and neurophysiological studies about whip spiders has opened a doorway into their strange sensory world.
-                                        <a href="https://www.sciencetimes.com/articles/31445/20210530/great-whip-spider-boom-what-is-it.htm" target="_blank">Read @ Science Times</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3">
-                                <img src="img/science-moab.webp" class="img-fluid" alt="Science Moab">
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3>Understanding How Animals Behave</h3>
-                                    <p>There is shockingly little known about why animals behave the ways they do.
-                                        Here, we speak with Dr. Kenny Chapin who explains what we know about animal behavior…
-                                        <a href="https://www.kzmu.org/show/science-moab" target="_blank">Listen @ KZMU</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3">
-                                <img src="img/bad-science-podcast.jpg" class="img-fluid" alt="Bad Science Podcast">
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h3>Adaptation with Nadia Osman & Dr. Kenneth Chapin</h3>
-                                    <p>
-                                        The current surge of behavioral and neurophysiological studies about whip spiders has opened a doorway into their strange sensory world.
-                                        <a href="https://www.stitcher.com/show/bad-science" target="_blank">Listen @ Seeker Podcasts</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>     
-                    </div>
-                </div>
-            </div>
-            
-            <div id="data" class="accordion-item shadow">
-                <h2 class="accordion-header bg-dark text-light rounded-0" id="headingData">
-                    <button class="accordion-button bg-dark text-light rounded-0 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseData" aria-expanded="true" aria-controls="collapseData">
-                        <span class="text-data"><i class="fa-solid fa-chart-line"></i>&nbsp; Data Science</span>
-                    </button>
-                </h2>
-                <div id="collapseData" class="accordion-collapse collapse show show" aria-labelledby="headingData" data-bs-parent="#data">
-                    <div class="accordion-body pb-4 pt-4">
-                        <div class="d-flex flex-row flex-wrap pt-4 pb-4">
-                            <div class="col-lg-4 col-md-6 col-sm-12 p-0">
-                                <h5 class="m-2 w-100">Coding and Development</h5>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold" style="white-space:nowrap;">Fluent in</div>
-                                    <div class="">Python, R, SQL, PHP, HTML, markdown, Javascript, yaml/toml, shell/BASH, Netlogo</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold" style="white-space:nowrap;">Conversant in</div>
-                                    <div>MATLAB, SAS, Sass, Typescript. Visual Basic, Latex, Mathematica, SVG</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold" style="white-space:nowrap;">Engineering</div>
-                                    <div class="m-1">Pipeline design, data security, version control, continuous integration/development</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold" style="white-space:nowrap;">Platforms</div>
-                                    <div class="m-1">Amazon Web Services (AWS), Snowflake, Redcap, github, SLURM, ESRI</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold" style="white-space:nowrap;">Web Apps</div>
-                                    <div class="m-1">Fullstack developer.  Django, Jinja/Flask,  LAMP stack, R Shiny, API, Selenium</div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4 col-md-6 col-sm-12 p-0">
-                                <h5 class="m-2">Analysis and Visualization</h5>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold" style="white-space:nowrap;">Statistics</div>
-                                    <div class="m-1">Frequentist and Bayesian, multivariate, ordinal, non-linear and non-parametric</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold">Modeling</div>
-                                    <div class="m-1">Predictive, simulation, agent-based, analytical, and mixed-effects modeling</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold" style="white-space:nowrap;">ML/AI</div>
-                                    <div class="m-1">Supervised, unsupervised and reinforced machine learning; tensorflow, pytorch</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold">Visualization</div>
-                                    <div class="m-1">Expert in distilling complex data for popular audiences; R, plotly, Shiny, matplotlib</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold">Mapping</div>
-                                    <div class="m-1">Geospatial analysis, geocoding, address parsing, GIS, ESRI, Google Maps API</div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4 col-md-6 col-sm-12 p-0">
-                                <h5 class="m-2">Genomics</h5>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold">Sequencing</div>
-                                    <div>High-throughput (Illumina, Roche), Sanger, restriction enzyme, genotyping-by-sequencing</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold" style="white-space:nowrap;">Lab Skills</div>
-                                    <div>DNA extract, purification, quantification; PCR, electrophoresis, Sanger sequencing</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold">Bioinformatics</div>
-                                    <div>Sequence processing and alignment, de novo genome assembly, variant calling</div>
-                                </div>
-                                <div class="d-flex flex-column rounded border m-2 ps-2 p-1">
-                                    <div class="fw-bold">Analyses</div>
-                                    <div>Phylogenetics, metagenomics, population and landscape genetics, demographic modeling</div>
-                                </div>
+                                <div class="d-flex flex-row flex-wrap gap-5 justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3 shadow">
+                                        <img src="img/sci-show.png" class="img-fluid" alt="SciShow">
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h4 class="p-2">6 Animals with extraordinary adaptations to cave life</h4>
+                                            <p class="p-2">
+                                                Living in a cave isn’t easy, but these six cave-dwelling animals have gained some amazing traits to help them survive there! 
+                                                <a href="https://www.youtube.com/watch?v=sI1pvZZ3Mec" target="_blank">Watch @ Scishow</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3 shadow">
+                                        <img src="img/bbc-news.png" class="img-fluid" alt="BBC News">
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h4 class="p-2">The spider so terrifying that it has its own publicist</h4>
+                                            <p class="p-2">
+                                                He has spent years studying these violent and terrifying-looking animals, and assures that they are truly “delicate and shy” beings.
+                                                <a href="https://www.bbc.com/mundo/noticias/2016/04/160411_ciencia_arana_aterradora_con_relacionista_publico_ap" target="_blank">Read @ BBC News</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3 shadow">
+                                        <img src="img/national-geographic.webp" class="img-fluid" alt="National Geographic">
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h4 class="p-2">Watch Cannibal ‘Scorpions’ Fight</h4>
+                                            <p class="p-2">With long, spiky legs and formidable fangs, tailless whip scorpions look a
+                                                lot scarier than they are…
+                                                <a href="https://www.nationalgeographic.com/animals/article/whip-scorpions-arachnids-cannibalism" target="_blank">Read @ National Geographic</a>
+                                            </p>
+                                        </div>
+                                    </div>                            
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3 shadow">
+                                        <img src="img/the-scientist.jpg" class="img-fluid" alt="The Scientist">
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h4 class="p-2">Meet the arachnid that may add a new chapter to the book on sensory biology</h4>
+                                            <p class="p-2">
+                                                Whip spiders, also known as tailless whip scorpions, are actually neither spiders nor scorpions.
+                                                <a href="https://www.the-scientist.com/notebook/meet-the-arachnid-that-may-add-a-new-chapter-to-the-book-on-sensory-biology-30173" target="_blank">Read @ The Scientist</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3 shadow">
+                                        <img src="img/earth-touch.jpeg" class="img-fluid" alt="Earth Touch News">
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h4 class="p-2">Cannibal Battle: Whip Scorpion Turf Wars can be Deadly</h4>
+                                            <p class="p-2">
+                                                Tailless whip scorpions are fiercely territorial - and willing to fight for their turf. Scientists recently set out to learn more about the behaviour.
+                                                <a href="https://www.earthtouchnews.com/natural-world/predator-vs-prey/cannibal-battles-whip-scorpion-turf-wars-can-be-deadlysciencetimes.com/articles/31445/20210530/great-whip-spider-boom-what-is-it.htm" target="_blank">Read @ Earth Touch News</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3 shadow">
+                                        <img src="img/science-times.webp" class="img-fluid" alt="Science Times">
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h4 class="p-2">Great Whip Spider Boom: Are These Exotic Arachnids a Spider or Tailless Scorpions?</h4>
+                                            <p class="p-2">
+                                                The current surge of behavioral and neurophysiological studies about whip spiders has opened a doorway into their strange sensory world.
+                                                <a href="https://www.sciencetimes.com/articles/31445/20210530/great-whip-spider-boom-what-is-it.htm" target="_blank">Read @ Science Times</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3 shadow">
+                                        <img src="img/science-moab.webp" class="img-fluid" alt="Science Moab">
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h4 class="p-2">Understanding How Animals Behave</h4>
+                                            <p class="p-2">There is shockingly little known about why animals behave the ways they do.
+                                                Here, we speak with Dr. Kenny Chapin who explains what we know about animal behavior…
+                                                <a href="https://www.kzmu.org/show/science-moab" target="_blank">Listen @ KZMU</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column mb-3 mt-3 shadow">
+                                        <img src="img/bad-science-podcast.jpg" class="img-fluid" alt="Bad Science Podcast">
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h4 class="p-2">Adaptation with Nadia Osman & Dr. Kenneth Chapin</h4>
+                                            <p class="p-2">
+                                                The current surge of behavioral and neurophysiological studies about whip spiders has opened a doorway into their strange sensory world.
+                                                <a href="https://www.stitcher.com/show/bad-science" target="_blank">Listen @ Seeker Podcasts</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>     
                             </div>
                         </div>
                     </div>
+                    <div id="data" class="accordion-item shadow">
+                        <h2 class="accordion-header shadow" id="headingData">
+                            <button class="accordion-button bg-dark rounded-0 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseData" aria-expanded="true" aria-controls="collapseData">
+                                <h2 class="text-data"><i class="fa-solid fa-chart-line"></i>&nbsp; Data Science</h2>
+                            </button>
+                        </h2>
+                        <div id="collapseData" class="accordion-collapse collapse show show" aria-labelledby="headingData" data-bs-parent="#data">
+                            <div class="accordion-body pb-4 pt-4">
+                                <div class="d-flex flex-column p-3 text-center mt-5 w-100">
+                                    <h3 class="display-4">Skillset</h3>
+                                </div>
+                                <div class="d-flex flex-row flex-wrap pt-4 pb-4">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 p-0">
+                                        <h4 class="m-2 w-100">Coding and Development</h4>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 mb-4 shadow">
+                                            <h5>Fluent in</h5>
+                                            <p>Python, R, SQL, PHP, HTML, markdown, Javascript, yaml/toml, shell/BASH, Netlogo</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Conversant in</h5>
+                                            <p>MATLAB, SAS, Sass, Typescript. Visual Basic, Latex, Mathematica, SVG</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Engineering</h5>
+                                            <p>Pipeline design, data security, version control, continuous integration/development</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Platforms</h5>
+                                            <p>Amazon Web Services (AWS), Snowflake, Redcap, github, SLURM, ESRI</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Web Apps</h5>
+                                            <p>Fullstack developer.  Django, Jinja/Flask,  LAMP stack, R Shiny, API, Selenium</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12 p-0">
+                                        <h5 class="m-2">Analysis and Visualization</h5>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Statistics</h5>
+                                            <p>Frequentist and Bayesian, multivariate, ordinal, non-linear and non-parametric</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Modeling</h5>
+                                            <p>Predictive, simulation, agent-based, analytical, and mixed-effects modeling</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>ML/AI</h5>
+                                            <p>Supervised, unsupervised and reinforced machine learning; tensorflow, pytorch</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Visualization</h5>
+                                            <p>Expert in distilling complex data for popular audiences; R, plotly, Shiny, matplotlib</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Mapping</h5>
+                                            <p>Geospatial analysis, geocoding, address parsing, GIS, ESRI, Google Maps API</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12 p-0">
+                                        <h5 class="m-2">Genomics</h5>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Sequencing</h5>
+                                            <p>High-throughput (Illumina, Roche), Sanger, restriction enzyme, genotyping-by-sequencing</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Lab Skills</h5>
+                                            <p>DNA extract, purification, quantification; PCR, electrophoresis, Sanger sequencing</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Bioinformatics</h5>
+                                            <p>Sequence processing and alignment, de novo genome assembly, variant calling</p>
+                                        </div>
+                                        <div class="d-flex flex-column m-2 ps-2 pt-2 p-1 m-2 shadow">
+                                            <h5>Analyses</h5>
+                                            <p>Phylogenetics, metagenomics, population and landscape genetics, demographic modeling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div> 
+        </div> 
+        
+        <footer class="bg-dark text-white p-2">
+            <div class="container d-flex flex-row flex-wrap justify-content-center align-content-center text-center">
+                <div class="p-2"><a class="text-life" href="#life"><i class="fa-solid fa-dna"></i> Life Science</a></div>
+                <div class="p-2"><a class="text-pop" href="#pop"><i class="fa-solid fa-flask"></i> Pop Science</a></div>
+                <div class="p-2"><a class="text-data" href="#data"><i class="fa-solid fa-chart-line"></i> Data Science</a></div>
+                <small class="p-2">&copy; 2006-2025 Kenneth James Chapin. All Rights Reserved.</small>
             </div>
-        </div>
+        </footer> 
     </div>
-    <footer class="bg-dark text-white p-2">
-        <div class="container d-flex flex-row flex-wrap justify-content-center align-content-center text-center">
-            <div class="p-2"><a class="text-life" href="#life"><i class="fa-solid fa-dna"></i> Life Science</a></div>
-            <div class="p-2"><a class="text-pop" href="#pop"><i class="fa-solid fa-flask"></i> Pop Science</a></div>
-            <div class="p-2"><a class="text-data" href="#data"><i class="fa-solid fa-chart-line"></i> Data Science</a></div>
-            <small class="p-2">&copy; 2006-2025 Kenneth James Chapin. All Rights Reserved.</small>
-        </div>
-    </footer> 
 </body>
 </html>
