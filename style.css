@@ -186,6 +186,9 @@ img {
         max-height: 6rem;
         margin:0.2rem;
     }
+    #press img {
+        max-height: 100vw;
+    }
     .img-sm {
         max-height:2.5rem;
     }
@@ -402,9 +405,8 @@ img {
     padding:1rem;
 }
 @media (max-width:800px) {
-
     .p {
-        padding: 0.2rem;
+        padding: 0.2rem !important;
     }
     .m {
         margin:0.2rem;
