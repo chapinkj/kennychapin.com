@@ -497,6 +497,9 @@ footer a {
 .ms {
     margin-left:0.5rem;
 }
+.mb {
+    margin-bottom:1rem;
+}
 
 @media (max-width:800px) {
     .hide-when-small {
