@@ -8,68 +8,18 @@
     --header-height: 3rem;
     --header-height-small: 2rem;
     --articleup-duration: 0.5s;
+    --padding: 1rem;
+    --margin: 1rem;
 }
-
+@media (max-width: 800px) {
+    :root {
+        --padding: 0.2rem;
+        --margin: 0.5rem;
+    }
+}
 /* Reset and Base */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ul,
-li,
-article,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, code, img, small, 
+strong, b, u, i, center, ul, li, article, figure, footer, header, section {
     margin: 0;
     padding: 0;
     border: 0;
@@ -79,17 +29,14 @@ section {
     vertical-align: baseline;
     font-family: 'Open Sans', sans-serif;
 }
-
 body {
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
 }
-
 ol,
 ul {
     list-style: none;
 }
-
 *,
 *::before,
 *::after {
@@ -98,7 +45,6 @@ ul {
     left: 0;
     box-sizing: border-box;
 }
-
 /* Section-specific theming */
 #data {
     --section-color: #9489CA;
@@ -295,13 +241,13 @@ section:target .header .ball {
 section .body {
     box-shadow: inset 0 0 1rem 1rem rgba(0, 0, 0, 0.7);
     border-radius: 1rem;
-    padding: 0 1rem;
+    padding: 0 var(--padding);
     overflow: scroll;
     max-height:100%;
 }
 
 section:target .body {
-    padding: 1rem;
+    padding: calc(var(--padding) * 2) var(--padding);
     overflow: scroll;
 }
 
@@ -309,21 +255,16 @@ section .body a {
     color: var(--section-color);
 }
 
-@media (max-width: 800px) {
-    .section:target .body {
-        padding: 0.2rem;
-    }
-}
 
+/* Article */
 article {
     display: flex;
     flex-direction: column;
-    margin:4rem 1rem;
-}
-@media (max-width: 800px) {
-    article {
-        margin:2rem 0.2rem;
-    }
+    margin: calc(var(--margin) * 4) var(--margin) !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
 
 @keyframes articleup {
@@ -365,34 +306,22 @@ section:has(:target) article:nth-of-type(4) {
 }
 
 
-.page {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1rem 0rem;
-    padding-top: 0;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-}
-@media (max-width: 800px) {
-    .page {
-        padding: 0.2rem 0rem;
-    }
-}
 .box {
-    flex-wrap: wrap;
-    flex: 1;
-    width:fit-content;
-    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 10rem; 
+    padding: calc(var(--padding) * 0.5);
+    margin: var(--margin);
     box-shadow: var(--box-shadow);
-    padding: 0.5rem;
     border-radius: var(--border-radius);
     border:1px solid transparent;
     background-color: var(--light);
 }
-@media (max-width: 800px) {
-    .box {
-        padding: 0.2rem;
-    }
+.box p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
 
 
 /* Typography */
@@ -425,20 +354,29 @@ li {
 }
 
 
-
+li {
+    padding: 0 var(--padding);
+}
+small {
+    font-size: 0.9rem;
+}
+.big {
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 0 var(--padding);
+}
 h1,
 .h1 {
     font-size: 3rem;
     line-height: 3.9rem;
-    margin:0;
-    padding:0;
+    padding: 0 var(--padding);
 }
 
 h2,
 .h2 {
     font-size: 2rem;
     line-height: 2rem;
-    padding:0.5rem 0.5rem;
+    padding: 0 var(--padding);
 }
 main:has(section:target) h1 {
     font-size: 2rem;
@@ -449,7 +387,7 @@ main:has(section:target) h1 {
 main:has(section:target) h2 {
     font-size: 1.2rem;
     line-height: 1rem;
-    padding:0 0.5rem;
+    padding:0 var(--padding);
     transition:font-size 0.2s ease-out line-height 0.2s ease-out;
 }
 main:has(section:target) .header,
@@ -461,7 +399,7 @@ h3,
 .h3 {
     font-size: 1.75rem;
     line-height: 1.75rem;
-    margin: 0.5rem 0;
+    margin: calc(var(--margin) * 0.5) var(--margin);    
 }
 
 h4,
@@ -481,27 +419,25 @@ h6,
     font-size: 1rem;
 }
 
+
 span,
 p {
     font-size: 1rem;
     color: var(--dark);
-    padding:0.5rem 0rem;
+    padding:var(--padding);
 }
 
 @media (max-width: 800px) {
-    
     h1,
     .h1 {
         font-size: 1.75rem;
         line-height: 2.25rem;
     }
-    
     h2,
     .h2 {
         font-size: 1.2rem;
         line-height: 1.2rem;
     }
-    
     h3,
     .h3,
     h4,
@@ -510,20 +446,15 @@ p {
         line-height: 1rem;
         font-weight: 600;
     }
-    
     span,
     p {
         font-size: 0.8rem;
         color: var(--dark);
     }
 }
-
-
-/* Images */
 .box img {
-    max-height: 10rem;
+    height: 10rem;
     width: auto;
-    max-width: 100%;
 }
 @media (max-width: 800px) {
     .box img {
@@ -534,7 +465,6 @@ p {
     display: none;
     background-color: var(--dark);
 }
-
 .lightbox:target {
     display: grid;
     position: fixed;
@@ -548,7 +478,6 @@ p {
     z-index: 10;
     
 }
-
 .lightbox:target img:not(.thumbnail) {
     max-width: 100%;
     max-height: 100%;
@@ -556,29 +485,21 @@ p {
 }
 
 .card {
-    max-width: 18rem;
+    flex: 1 1 20rem; 
     border: 1px solid var(--section-color);
     border-top: 0;
-    margin: 1rem 0.5rem;
+    margin: var(--margin);
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
-
-@media (max-width: 800px) {
-    .card {
-        margin: 1rem 0.5rem;
-    }
-}
-
 .card img {
     width: 100%;
     height: auto;
     max-height: 100rem;
 }
-
-.card div {
-    padding: 0.5rem;
+.card h4, .card p {
+    padding: var(--padding);
 }
 
 /* clickable box animation */
@@ -588,7 +509,7 @@ a.box {
 }
 
 a.box:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     border-radius: var(--border-radius);
     transition: transform 0.1s ease-out;
 }
@@ -620,9 +541,6 @@ a.box:hover {
     color: var(--light);
 }
 
-
-/* Publications Section */
-
 /* Background Link */
 .background-link {
     position: absolute;
@@ -638,34 +556,27 @@ a.box:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: var(--margin);
 }
 
 .col {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: var(--margin);
 }
-
 .flex {
     flex: 1;
 }
-
-.wrap {
-    flex-wrap: wrap;
-    white-space: wrap;
-}
-
 .nowrap {
     flex-wrap: nowrap;
     white-space: nowrap;
 }
-
 .center {
     justify-content: center;
     justify-items: center;
     text-align: center;
 }
-
 @media (max-width: 800px) {
     .center-when-small {
         justify-content: center;
@@ -673,21 +584,14 @@ a.box:hover {
         text-align: center;
     }
 }
-
 .middle {
     align-items: center;
     align-content: center;
 }
-
 .between {
     justify-content: space-between;
     align-items: space-between;
 }
-
-.align-content-end {
-    align-content: end;
-}
-
 .grow {
     flex-grow: 1 !important;
 }
@@ -698,68 +602,11 @@ a.box:hover {
 }
 
 /* Box Utilities */
-w100 {
-    width: 100%;
+.m, .mp {
+    margin: var(--margin);
 }
-.m {
-    margin: 1rem;
-}
-
-.mt {
-    margin-top: 1rem;
-}
-
-.mx {
-    margin: 0 1rem;
-}
-
-.p {
-    padding: 1rem;
-}
-
-.px {
-    padding: 0 1rem;
-}
-
-.py {
-    padding: 1rem 0;
-}
-
-.mp {
-    margin: 1rem;
-    padding: 1rem;
-}
-
-.ms {
-    margin-left: 0.5rem;
-}
-.m2s {
-    margin-left: 1.5rem;
-}
-
-.mb {
-    margin-bottom: 1rem;
-}
-
-@media (max-width: 800px) {
-    .m,
-    .mx,
-    .mp {
-        margin: 0.5rem;
-    }
-    .mt {
-        margin-top: 0.5rem;
-    }
-    .p,
-    .mp {
-        padding: 0.5rem;
-    }
-    .ms {
-        margin-left: 0.25rem;
-    }
-    .mb {
-        margin-bottom: 0.5rem;
-    }
+.p, .mp {
+    padding: var(--padding);
 }
 
 .bold {
@@ -816,8 +663,16 @@ w100 {
 }
 
 footer {
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--dark);
     position:sticky;
+    padding: var(--padding) var(--padding);
     bottom:0;
     width:100%;
+}
+footer > a > span {
+    color: var(--light)
 }
